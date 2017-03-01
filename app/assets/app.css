@@ -159,3 +159,14 @@ md-input-container .md-errors-spacer{
 .search-bar .md-button { 
     margin-right:0;
 }
+
+.material-icons.icon,
+.material-label {
+  font-size: 3em;
+  line-height: 1;
+  display: block;
+  color: #424242;
+  margin: .5em 0
+}
+
+
