@@ -1,24 +1,27 @@
 <div  layout="column" ng-cloak>
-  <md-toolbar >
+<!-- Toolbar -->
+   <md-toolbar class="md-hue-2" >
     <div class="md-toolbar-tools">
-      <h2 md-truncate flex class="title">DigiBucket</h2>
-     
-    <div layout="row" layout-align="center center" style="padding-top:20px">
-             <md-input-container md-theme="input" flex>
-            <label md-colors="{'color':'grey'}">&nbsp;</label>
-            <input  md-colors="{'color':'grey'}"  placeholder="enter search">
-          </md-input-container>
-    </div>
-       
+
+<!-- title -->        
+      <h2 md-truncate flex="20" class="title">DigiBucket</h2>
         
-      
-    <md-button class="md-primary md-raised"  aria-label="Search" >
-        <md-icon class="step md-warn md-hue-5" md-font-icon="icon-home" area-lable = "icon-home48" style="font-size:48px; height:48px; color:#fff">
-        </md-icon> Search
+<!-- Search Panel -->
+     <div class="md-accent md-raised search-bar" flex >        
+        <div layout="row" flex class="md-primary">
+          <md-input-container class="md-accent"  layout-fill>
+              <label>&nbsp;</label>
+            <input type="text" style=""  placeholder="Search your Product" />  
+          </md-input-container>
+            <md-button class="md-accent md-raised"><md-icon>search</md-icon>Search</md-button>
+         </div>
+    </div>
+        
+<!-- cart -->  
+    <md-button class="md-raised md-accent">
+        <md-icon>&#xE8CC;</md-icon>Cart
     </md-button>
     </div>
+       
   </md-toolbar>
-
-   
-
 </div>

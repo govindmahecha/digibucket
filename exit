@@ -1,0 +1,173 @@
+[33mcommit bbcd963313913b4f541e9a6e8706821a372189ed[m
+Author: Govind <mahechahome@gmail.com>
+Date:   Wed Mar 1 18:51:39 2017 +0530
+
+    first
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b4a0353[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32mlogs/*[m
+[32m+[m[32m!.gitkeep[m
+[32m+[m[32mnode_modules/[m
+[32m+[m[32mbower_components/[m
+[32m+[m[32mtmp[m
+[32m+[m[32m.DS_Store[m
+[32m+[m[32m.idea[m
+[32m+[m[32mapp/jspm_packages[m
+[1mdiff --git a/.jshintrc b/.jshintrc[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6f00218[m
+[1m--- /dev/null[m
+[1m+++ b/.jshintrc[m
+[36m@@ -0,0 +1,13 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "globalstrict": true,[m
+[32m+[m[32m  "globals": {[m
+[32m+[m[32m    "angular": false,[m
+[32m+[m[32m    "describe": false,[m
+[32m+[m[32m    "it": false,[m
+[32m+[m[32m    "expect": false,[m
+[32m+[m[32m    "beforeEach": false,[m
+[32m+[m[32m    "afterEach": false,[m
+[32m+[m[32m    "module": false,[m
+[32m+[m[32m    "inject": false[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/LICENSE b/LICENSE[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9ced331[m
+[1m--- /dev/null[m
+[1m+++ b/LICENSE[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32mThe MIT License[m
+[32m+[m
+[32m+[m[32mCopyright (c) 2010-2014 Google, Inc. http://angularjs.org[m
+[32m+[m
+[32m+[m[32mPermission is hereby granted, free of charge, to any person obtaining a copy[m
+[32m+[m[32mof this software and associated documentation files (the "Software"), to deal[m
+[32m+[m[32min the Software without restriction, including without limitation the rights[m
+[32m+[m[32mto use, copy, modify, merge, publish, distribute, sublicense, and/or sell[m
+[32m+[m[32mcopies of the Software, and to permit persons to whom the Software is[m
+[32m+[m[32mfurnished to do so, subject to the following conditions:[m
+[32m+[m
+[32m+[m[32mThe above copyright notice and this permission notice shall be included in[m
+[32m+[m[32mall copies or substantial portions of the Software.[m
+[32m+[m
+[32m+[m[32mTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR[m
+[32m+[m[32mIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,[m
+[32m+[m[32mFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE[m
+[32m+[m[32mAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER[m
+[32m+[m[32mLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,[m
+[32m+[m[32mOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN[m
+[32m+[m[32mTHE SOFTWARE.[m
+[32m+[m
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..eb81f5c[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,163 @@[m
+[32m+[m[32m# Angular Material-Start[m
+[32m+[m
+[32m+[m[32mThis Material **start** project is a *seed* for AngularJS Material applications. The project contains a sample AngularJS application and is pre-configured to install the Angular framework and a bunch of development and testing tools for instant web development gratification.[m
+[32m+[m
+[32m+[m[32mThis sample application is intended to be useful as both a learning tool and a skeleton application[m
+[32m+[m[32mfor a typical [AngularJS Material](http://material.angularjs.org/) web app: comprised of a Side navigation[m
+[32m+[m[32marea and a content area. You can use it to quickly bootstrap your AngularJS webapp projects and dev[m
+[32m+[m[32menvironment for these projects.[m
+[32m+[m
+[32m+[m[32m### What is the UX?[m
+[32m+[m
+[32m+[m[32mBelow is a snapshot of the Starter-App with the Users' *master-detail* view. Also shown is the user[m
+[32m+[m[32mexperience that will be displayed for smaller device sizes. The responsive layout changes to hide[m
+[32m+[m[32mthe user list, reveal the **menu** button. In the User Details view, you may also click the[m
+[32m+[m[32m**share** button  to show the Contact &lt;User&gt; bottom sheet view.[m
+[32m+[m
+[32m+[m[32m<br/>[m
+[32m+[m
+[32m+[m[32m![material-starter-ux2](https://cloud.githubusercontent.com/assets/210413/6448551/70864488-c0e0-11e4-8767-c4e1e4c2f343.png)[m
+[32m+[m
+[32m+[m[32m<br/>[m
+[32m+[m
+[32m+[m[32mThis Starter app demonstrates how:[m
+[32m+[m
+[32m+[m[32m*  Angular Material `layout` and `flex` options can easily configure HTML containers[m
+[32m+[m[32m*  Angular Material components `<md-toolbar>`, `<md-sidenav>`, `<md-icon>` can be quickly used[m
+[32m+[m[32m*  Custom controllers can use and show `<md-bottomsheet>` with HTML templates[m
+[32m+[m[32m*  Custom controller can easily, programmatically open & close the SideNav component.[m
+[32m+[m[32m*  Responsive breakpoints and `$mdMedia` are used[m
+[32m+[m[32m*  Theming can be altered/configured using `$mdThemingProvider`[m
+[32m+[m[32m*  ARIA features are supported by Angular Material and warnings can be used to improve accessibility.[m
+[32m+[m
+[32m+[m[32m### ES5 & ES5 Tutorials[m
+[32m+[m
+[32m+[m[32mThis repository contains two ES5 branches:[m
+[32m+[m
+[32m+[m[32m - `es5-tutorials` - Step-by-step instructions that clearly demonstrate how the Starter application[m
+[32m+[m[32m can be created in minutes.[m
+[32m+[m[32m - `es5` (this branch) - The final ES5 version which you complete in the last step of the tutorials[m
+[32m+[m[32m above.[m
+[32m+[m
+[32m+[m[32m![Wireframe](https://cloud.githubusercontent.com/assets/210413/6444676/c247c8f8-c0c4-11e4-8206-208f55cbceee.png)[m
+[32m+[m
+[32m+[m[32m> These ES5 tutorials were presented live, on-stage at **ng-conf 2015, Utah**.[m
+[32m+[m
+[32m+[m[32m## Getting Started[m
+[32m+[m
+[32m+[m[32m#### Prerequisites[m
+[32m+[m
+[32m+[m[32mYou will need **git** to clone the material-start repository. You can get git from[m
+[32m+[m[32m[http://git-scm.com/][git].[m
+[32m+[m
+[32m+[m[32mWe also use a number of node.js tools to initialize and test material-start. You must have node.js[m
+[32m+[m[32mand its package manager (npm) installed. You can get them from[m
+[32m+[m[32m[http://nodejs.org/][node].[m
+[32m+[m
+[32m+[m[32m#### Clone Material-Start[m
+[32m+[m
+[32m+[m[32mTo get you started, first, clone the [Material-Start](https://github.com/angular/material-start)[m
+[32m+[m[32mrepository using [git][git]:[m
+[32m+[m
+[32m+[m[32m    git clone https://github.com/angular/material-start[m
+[32m+[m[32m    cd material-start[m
+[32m+[m[41m    [m
+[32m+[m[32mNext, checkout the `es5` or `es5-tutorial` branches.[m
+[32m+[m
+[32m+[m[32m    git checkout es5[m
+[32m+[m[41m    [m
+[32m+[m[32m> **Note:** The `master` branch contains the es6 version of this project.[m
+[32m+[m
+[32m+[m[32m#### Install Dependencies[m
+[32m+[m
+[32m+[m[32mWe have two kinds of dependencies in this project: tools and AngularJS framework code.  The tools[m
+[32m+[m[32mhelp us manage and test the application.[m
+[32m+[m
+[32m+[m[32m* We get the tools we depend upon via `npm`, the [node package manager][npm].[m
+[32m+[m[32m* We also get the AngularJS and Angular Material library code via `npm`[m
+[32m+[m
+[32m+[m[32m```[m
+[32m+[m[32mnpm install[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mYou should find that you have one new folder in your project:[m
+[32m+[m
+[32m+[m[32m - `node_modules` - contains the npm packages for the tools we need[m
+[32m+[m
+[32m+[m
+[32m+[m[32m## Directory Layout[m
+[32m+[m
+[32m+[m[32m```[m
+[32m+[m[32mapp/                    --> all of the source files for the application[m
+[32m+[m[32m  assets/app.css        --> default stylesheet[m
+[32m+[m[32m  src/                  --> all app specific modules[m
+[32m+[m[32m     users/             --> package for user features[m
+[32m+[m[32m  index.html            --> app layout file (the main html template file of the app)[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m
+[32m+[m[32m## Serving the Appl

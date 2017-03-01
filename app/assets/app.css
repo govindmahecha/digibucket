@@ -131,3 +131,21 @@ span.name {
   padding-left:5px;
 }
 
+
+
+md-input-container .md-errors-spacer{
+    min-height:0px;
+}
+
+.search-bar{
+    background-color:#fff; 
+    border-radius:2px;
+}
+
+.search-bar input {
+    font-size:95%;
+}
+
+.search-bar .md-button { 
+    margin-right:0;
+}
