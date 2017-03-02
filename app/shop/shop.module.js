@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('shopModule',['productFilter','shopToolbar']);
+angular.module('shopModule',['productFilter','shopToolbar','rzModule','productsListModule']);
