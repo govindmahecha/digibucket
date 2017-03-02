@@ -1,5 +1,5 @@
-angular.module('sideNav')
-    .animation('.abc',function(){
+angular.module('productFilter')
+    .animation('.brands',function(){
     return{
         beforeAddClass : function(element,className,doneFn){
            if(className === 'ng-hide'){

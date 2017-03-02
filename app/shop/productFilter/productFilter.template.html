@@ -1,0 +1,50 @@
+     <div style="padding-left:16px" >
+        <div layout="row" layout-align="center center" >
+            <h4 flex >Brands</h4>  
+            <md-button class="md-icon-button" align="right" ng-click="toggleBrands()">
+            <md-icon class="material icons"  >{{plusMinus}}</md-icon>
+            </md-button>
+        </div>
+        <div class="brands md-primary" layout="column"  ng-hide="hideBrands">
+          <div   ng-repeat =" brand in brands">
+          <md-checkbox  layout="100" ng-model="data.status" aria-label="{{brand}}">
+             {{brand}}
+          </md-checkbox>
+        </div>
+      </div>
+     </div>
+   
+<div  style="border-bottom:1px solid lightgray; padding-left:16px ; padding-right:16px">
+    <div layout="row" layout-align="center center">
+        <h4 flex>Price</h4>
+        <md-button class="md-icon-button" align="right" ng-click="togglePrice()">
+            <md-icon class="material icons"  >{{price.plusMinus}}</md-icon>
+        </md-button>
+    </div>
+    <div  style=" padding-top:0; margin-top:0">
+       <rzslider
+    rz-slider-model="slider.min"
+    rz-slider-high="slider.max"
+    rz-slider-options="slider.options"></rzslider>
+    </div>
+    <div layout="row" >
+        <label flex>Rs. {{slider.min}}</label>
+        <label>Rs. {{slider.max}}</label>
+    </div>
+    
+    <div layout="row">
+        <div flex layout="row">
+        <div layout="row" layout-align="center center"  style="border:1px solid lightgray; margin-top:4px; height:40px; margin-bottom:4px; border-radius:2px">
+            <label md-colors="{'color':'grey'}" style="padding-left:4px; padding-right:4px">Rs.</label>
+            <input type="number" ng-model="slider.min" style="border:none; width:40px; user-select:none; outline-color:transparent"/>
+        </div>
+        </div>
+        <div layout="row" layout-align="center center" style="border:1px solid lightgray; margin-top:4px; height:40px; margin-bottom:4px; border-radius:2px">
+            <label md-colors="{'color':'grey'}" style="padding-left:4px; padding-right:4px">Rs.</label>
+            <input type="number" ng-model="slider.max" min="1000" style="border:none; width:40px; user-select:none; outline-color:transparent"/>
+        </div>
+    </div>
+    
+    
+</div>
+

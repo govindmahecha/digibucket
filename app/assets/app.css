@@ -160,6 +160,53 @@ md-input-container .md-errors-spacer{
     margin-right:0;
 }
 
+md-checkbox .md-label{
+    user-select: none;
+  
+}
+
+.rzslider{
+    margin-top:0;
+    
+}
+
+.rzslider .rz-selection{
+    background-color:#FF4081;
+}
+.rzslider span{
+    outline-color:transparent;
+}
+.rzslider .rz-pointer{
+    background-color:#FF4081;
+    height:16px;
+    width:16px;
+    top:-7px;
+}
+.rzslider .rz-bubble{
+    display:none;
+}
+
+.rzslider .rz-pointer.rz-active:hover{
+     height:25px;
+     width:25px;
+    top:-12px;
+}
+.rzslider .rz-pointer.rz-active:after{
+    background-color:#FF4081;
+}
+.rzslider .rz-pointer:hover:after{
+    background-color:#FF4081;
+}
+.rzslider .rz-pointer:after{
+    background-color:#FF4081;
+    display:none;
+}
+.rzslider .rz-pointer:hover{
+   background-color:#FF4081
+}
+.rzslider span:visited {
+    background-color:#FF4081;
+}
 .material-icons.icon,
 .material-label {
   font-size: 3em;
@@ -169,8 +216,16 @@ md-input-container .md-errors-spacer{
   margin: .5em 0
 }
 
+.brands {
+    
+}
 
-
+.vertical-sliders {
+    margin: 0;
+}
+.vertical-sliders > div {
+    height: 250px;
+}
 
 .gridListdemoBasicUsage md-grid-list {
   margin: 8px; }
