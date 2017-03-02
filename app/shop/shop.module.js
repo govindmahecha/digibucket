@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('shopModule',['sideNav','shopToolbar']);
+angular.module('shopModule',['sideNav','shopToolbar','ngAnimate']);

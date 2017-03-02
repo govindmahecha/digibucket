@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('sideNav',[]);
+angular.module('sideNav',['ngAnimate']);
