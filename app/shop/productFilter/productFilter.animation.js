@@ -1,5 +1,5 @@
 angular.module('productFilter')
-    .animation('.brands',function(){
+    .animation('.slideAnim',function(){
     return{
         beforeAddClass : function(element,className,doneFn){
            if(className === 'ng-hide'){
