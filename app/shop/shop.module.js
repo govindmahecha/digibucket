@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('shopModule',[]);
+angular.module('shopModule',['sideNav','shopToolbar']);

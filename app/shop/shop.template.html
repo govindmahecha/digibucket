@@ -1,41 +1,30 @@
 <div  layout="column" ng-cloak>
-<!-- Toolbar -->
-   <md-toolbar class="md-hue-2" >
-    <div class="md-toolbar-tools">
 
-<!-- title -->        
-      <h2 md-truncate flex="20" class="title">DigiBucket</h2>
-        
-<!-- Search Panel -->
-     <div class="md-accent md-raised search-bar" flex >        
-        <div layout="row" flex class="md-primary">
-          
-            <input type="text"   placeholder="Search your Product" layout-fill/>  
-          
-            <md-button class="md-accent md-raised"><md-icon>search</md-icon>Search</md-button>
-         </div>
-    </div>
-        
-<!-- cart -->  
-    <md-button class="md-raised material-icons md-accent mdl-badge" data-badge="4">
-        <md-icon class="material-icons mdl-badge " data-badge="4">&#xE8CC;</md-icon>Cart
-    </md-button>
-        
-    </div>
-       
-  </md-toolbar>
-<!---- End Toolbar ---->
+<!-- Toolbar -->
+ <shop-toolbar></shop-toolbar>
     
 <!---- Container ---->    
-    <div class="">
-        <md-card>
+    <section layout="row" flex>
+
+    <md-sidenav flex layout-margin
+        class="md-sidenav-left"
+        md-component-id="left"
+        md-is-locked-open="$mdMedia('gt-xs')"
+        md-whiteframe="4"
+         style="margin-top:40px;">
+
+      <side-filter ></side-filter>
+
+    </md-sidenav>
+        <md-content  flex layout-padding> 
+             <div flex class="gridListdemoBasicUsage">
         <md-grid-list
-        md-cols-xs="2" md-cols-sm="4" md-cols-md="8" md-cols-gt-md="10"
-        md-row-height-gt-md="1:1" md-row-height="1:1"
+        md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="6"
+        md-row-height-gt-md="1:1" md-row-height="2:2"
         md-gutter="12px" md-gutter-gt-sm="8px" >
 
     <md-grid-tile class="gray"
-        >
+        md-rowspan="3" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
       <md-grid-tile-footer>
         <h3>#1: (3r x 2c)</h3>
       </md-grid-tile-footer>
@@ -54,14 +43,14 @@
     </md-grid-tile>
 
     <md-grid-tile class="blue"
-        >
+        md-rowspan="2">
       <md-grid-tile-footer>
         <h3>#4: (2r x 1c)</h3>
       </md-grid-tile-footer>
     </md-grid-tile>
 
     <md-grid-tile class="red"
-        >
+        md-rowspan="2" md-colspan="2" md-colspan-sm="1" md-colspan-xs="1">
       <md-grid-tile-footer>
         <h3>#5: (2r x 2c)</h3>
       </md-grid-tile-footer>
@@ -75,7 +64,10 @@
     </md-grid-tile>
 
   </md-grid-list>
-            </md-card>
+
     </div>
         
+        </md-content>
+    </section>
+    
 </div>

@@ -1,0 +1,19 @@
+
+   
+      <div  layout-padding >
+        <div layout="row" layout-align="center center" style="border-bottom:1px solid lightgray">
+            <h4 flex >Brands</h4>  
+            <md-button class="md-icon-button" align="right" ng-click="toggleBrands()">
+            <md-icon class="material icons" hide-gt-md >{{plusMinus}}</md-icon>
+            </md-button>
+        </div>
+          <div layout="column"  ng-hide="hideBrands">
+          <div   ng-repeat =" brand in brands">
+          <md-checkbox  layout="100" ng-model="data.status" aria-label="{{brand}}">
+             {{brand}}
+          </md-checkbox>
+        </div>
+          </div>
+      </div>
+   
+
