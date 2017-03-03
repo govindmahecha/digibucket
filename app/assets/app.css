@@ -230,8 +230,24 @@ md-checkbox .md-label{
 .gridListdemoBasicUsage md-grid-list {
   margin: 8px; }
 
+.gridListdemoBasicUsage {
+        transition:transform linear;
+}
+
+.gridListdemoBasicUsage .white {
+    background:#fff;
+    
+}
+
+.gridListdemoBasicUsage .snippet{
+    color:#BDBDBD;
+    margin-bottom:8px;
+}
+
 .gridListdemoBasicUsage .gray {
-  background: #f5f5f5; }
+  background: #FF4081;
+  
+}
 
 .gridListdemoBasicUsage .green {
   background: #b9f6ca; }

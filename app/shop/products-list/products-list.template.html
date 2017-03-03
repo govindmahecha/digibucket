@@ -1,13 +1,35 @@
+<!--<div>{{pro}}</div>-->
+<md-input-container layout="row" flex layout-align="end top">
+   
+    <md-select ng-model="orderBy" area-label="orderBy" class="md-no-underline">
+        <md-option area-label="newest" value="age" >Newest</md-option>
+        <md-option area-label="LowToHigh" value="price">Price Low To High</md-option>
+        <md-option area-label="HighToLow" value="-price">Price High To Low</md-option>
+        
+    </md-select>
+</md-input-container>
 <div flex class="gridListdemoBasicUsage">
+        
         <md-grid-list
         md-cols-xs="1" md-cols-sm="2" md-cols-md="3" md-cols-gt-md="4"
         md-row-height-gt-md="2:3" md-row-height="2:2" md-row-height-gt-xs="2:3" md-row-height-gt-sm="2:3"
         md-gutter="12px" md-gutter-gt-sm="8px" >
 
-        <div >{{search}}</div>
-    <md-grid-tile class="green" ng-repeat="product in products">
-      <md-grid-tile-footer>
-        <h3>#1: (3r x 2c)</h3>
+        
+    <md-grid-tile class="white" ng-repeat="product in products  | orderBy : orderBy | priceRange : pro">
+        <div align="center" style='padding-bottom:8px'>
+           
+            <img ng-src="{{product.imageUrl}}" width="75%" layout-align="center"/>
+            
+            <div class="layout-padding snippet"  align="left">{{product.snippet | limitTo:120 }}</div>
+            
+            
+        </div>
+        
+      <md-grid-tile-footer class="gray" align="center" layout="column" layout-align="center center">
+        
+          <div align="center" style="font-size:90%" flex>{{product.name}}</div>
+            <div  flex><b>Rs.{{product.price}}/-</b></div>
       </md-grid-tile-footer>
     </md-grid-tile>
             

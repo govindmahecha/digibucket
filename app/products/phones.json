@@ -1,6 +1,7 @@
 [
     {
         "age": 0, 
+        "price" : 8499,
         "id": "motorola-xoom-with-wi-fi", 
         "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg", 
         "name": "Motorola XOOM\u2122 with Wi-Fi", 
@@ -8,6 +9,7 @@
     }, 
     {
         "age": 1, 
+        "price" : 10000,
         "id": "motorola-xoom", 
         "imageUrl": "img/phones/motorola-xoom.0.jpg", 
         "name": "MOTOROLA XOOM\u2122", 
@@ -15,6 +17,7 @@
     }, 
     {
         "age": 2, 
+        "price" : 11999,
         "carrier": "AT&T", 
         "id": "motorola-atrix-4g", 
         "imageUrl": "img/phones/motorola-atrix-4g.0.jpg", 
@@ -23,6 +26,7 @@
     }, 
     {
         "age": 3, 
+        "price" : 15000,
         "id": "dell-streak-7", 
         "imageUrl": "img/phones/dell-streak-7.0.jpg", 
         "name": "Dell Streak 7", 
@@ -30,6 +34,7 @@
     }, 
     {
         "age": 4, 
+        "price" : 12499,
         "carrier": "Cellular South", 
         "id": "samsung-gem", 
         "imageUrl": "img/phones/samsung-gem.0.jpg", 
@@ -38,6 +43,7 @@
     }, 
     {
         "age": 5, 
+        "price" : 13999,
         "carrier": "Dell", 
         "id": "dell-venue", 
         "imageUrl": "img/phones/dell-venue.0.jpg", 
@@ -46,6 +52,7 @@
     }, 
     {
         "age": 6, 
+        "price" : 9999,
         "carrier": "Best Buy", 
         "id": "nexus-s", 
         "imageUrl": "img/phones/nexus-s.0.jpg", 
@@ -54,6 +61,7 @@
     }, 
     {
         "age": 7, 
+        "price" : 14995,
         "carrier": "Cellular South", 
         "id": "lg-axis", 
         "imageUrl": "img/phones/lg-axis.0.jpg", 
@@ -62,6 +70,7 @@
     }, 
     {
         "age": 8, 
+        "price" : 20000,
         "id": "samsung-galaxy-tab", 
         "imageUrl": "img/phones/samsung-galaxy-tab.0.jpg", 
         "name": "Samsung Galaxy Tab\u2122", 
@@ -69,6 +78,7 @@
     }, 
     {
         "age": 9, 
+        "price" : 18999,
         "carrier": "Cellular South", 
         "id": "samsung-showcase-a-galaxy-s-phone", 
         "imageUrl": "img/phones/samsung-showcase-a-galaxy-s-phone.0.jpg", 
@@ -77,6 +87,7 @@
     }, 
     {
         "age": 10, 
+        "price" : 17000,
         "carrier": "Verizon", 
         "id": "droid-2-global-by-motorola", 
         "imageUrl": "img/phones/droid-2-global-by-motorola.0.jpg", 
@@ -85,6 +96,7 @@
     }, 
     {
         "age": 11, 
+        "price" : 16499,
         "carrier": "Verizon", 
         "id": "droid-pro-by-motorola", 
         "imageUrl": "img/phones/droid-pro-by-motorola.0.jpg", 
@@ -93,6 +105,7 @@
     }, 
     {
         "age": 12, 
+        "price" : 15999,
         "carrier": "AT&T", 
         "id": "motorola-bravo-with-motoblur", 
         "imageUrl": "img/phones/motorola-bravo-with-motoblur.0.jpg", 
@@ -101,6 +114,7 @@
     }, 
     {
         "age": 13, 
+        "price" : 21000,
         "carrier": "T-Mobile", 
         "id": "motorola-defy-with-motoblur", 
         "imageUrl": "img/phones/motorola-defy-with-motoblur.0.jpg", 
@@ -109,6 +123,7 @@
     }, 
     {
         "age": 14, 
+        "price" : 22499,
         "carrier": "T-Mobile", 
         "id": "t-mobile-mytouch-4g", 
         "imageUrl": "img/phones/t-mobile-mytouch-4g.0.jpg", 
@@ -117,6 +132,7 @@
     }, 
     {
         "age": 15, 
+        "price" : 19999,
         "carrier": "US Cellular", 
         "id": "samsung-mesmerize-a-galaxy-s-phone", 
         "imageUrl": "img/phones/samsung-mesmerize-a-galaxy-s-phone.0.jpg", 
@@ -125,6 +141,7 @@
     }, 
     {
         "age": 16, 
+        "price" : 25800,
         "carrier": "Sprint", 
         "id": "sanyo-zio", 
         "imageUrl": "img/phones/sanyo-zio.0.jpg", 
@@ -133,6 +150,7 @@
     }, 
     {
         "age": 17, 
+        "price" : 29600,
         "id": "samsung-transform", 
         "imageUrl": "img/phones/samsung-transform.0.jpg", 
         "name": "Samsung Transform\u2122", 
@@ -140,13 +158,15 @@
     }, 
     {
         "age": 18, 
+        "price" : 23000,
         "id": "t-mobile-g2", 
         "imageUrl": "img/phones/t-mobile-g2.0.jpg", 
         "name": "T-Mobile G2", 
         "snippet": "The T-Mobile G2 with Google is the first smartphone built for 4G speeds on T-Mobile's new network. Get the information you need, faster than you ever thought possible."
     }, 
     {
-        "age": 19, 
+        "age": 19,
+        "price" : 24499,
         "id": "motorola-charm-with-motoblur", 
         "imageUrl": "img/phones/motorola-charm-with-motoblur.0.jpg", 
         "name": "Motorola CHARM\u2122 with MOTOBLUR\u2122", 
