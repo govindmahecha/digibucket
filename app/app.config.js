@@ -12,6 +12,10 @@
                 when('/shop',{
                 templateUrl : 'shop/shop.template.html',
                 controller : 'shopController'
+            }).
+                when('/admin',{
+                templateUrl : 'admin/admin.template.html',
+                controller : 'adminController'
             })
                .otherwise('/') 
         }])
