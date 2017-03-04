@@ -5,9 +5,10 @@
  </ul>
 
 # Setup Guide
-<p>Install Nodejs</p>
+<p>Nodejs is highly recommended</p>
+<p>To Install project dependencies run following command in command line | terminal </p>
 <code>npm install</code>
-<p>this command will install all depedencies for this project</p>
+
 
 <p>Test in Browser Command  </p>
 <code>npm start</code>
