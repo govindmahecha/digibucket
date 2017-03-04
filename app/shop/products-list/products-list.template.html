@@ -16,7 +16,7 @@
         md-gutter="12px" md-gutter-gt-sm="8px" >
 
         
-    <md-grid-tile class="white" ng-repeat="product in products  | orderBy : orderBy | priceRange : pro">
+    <md-grid-tile class="white" ng-repeat="product in products  | orderBy : orderBy | priceRange : pro | filter:search">
         <div align="center" style='padding-bottom:8px'>
            
             <img ng-src="{{product.imageUrl}}" width="75%" layout-align="center"/>

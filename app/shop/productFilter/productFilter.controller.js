@@ -10,10 +10,10 @@ angular.module('productFilter')
     };
    $scope.slider = {
   min: 299,
-  max: 108740,
+  max: 49999,
   options: {
     floor: 299,
-    ceil: 190480
+    ceil: 40549
   }
 };
     

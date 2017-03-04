@@ -26,7 +26,8 @@
     "angular-route" : "^1.5.x" ,
     "angular-resource": "1.5.x",
     "jquery": "2.2.x",
-    "angularjs-slider" : "6.0.2"
+    "angularjs-slider" : "6.0.2",
+    "angular-material-data-table":""
   },
   "devDependencies": {
     "angular-mocks": "^1.4.9",

@@ -7,6 +7,40 @@ background-color:#e4e4e4;
   padding: 0px;
 }
 
+
+.page-home{
+
+animation:scaleUp 0.3s both ease-in;
+animation-delay : 0.3s;
+}
+
+
+.loader.ng-animate{
+
+
+}
+
+.loader {
+
+}
+
+.loader.ng-hide.ng-hide-add,
+.loader.ng-hide.ng-hide-remove{
+	transition:0.2s all ease-in;
+}
+
+.loader.ng-hide {
+	opacity: 0;
+	transform: scale(0,0);
+}
+
+@keyframes scaleUp {
+	from 		{ opacity:0.3; transform: scaleX(0); }
+}
+
+@keyframes scaleIn {
+	from {transform:scale(0,0)}
+}
 /* Toolbar area */
 
 .menu {

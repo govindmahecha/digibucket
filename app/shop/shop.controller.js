@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('shopModule')
-    .controller('shopController',['$scope','$log','$mdSidenav',function($scope,$log,$mdSidenav){
+    .controller('shopController',['$scope','$log','$mdSidenav','$timeout',function($scope,$log,$mdSidenav,$timeout){
         $scope.toggleLeft = buildDelayedToggler('left');
     function debounce(func, wait, context) {
       var timer;
@@ -16,6 +16,12 @@ angular.module('shopModule')
         }, wait || 10);
       };
     }
+
+	$scope.load = 20;
+	$scope.loaded = false;
+	$timeout(function(){
+		$scope.loaded = true;
+	},2000);
 
     /**
      * Build handler to open/close a SideNav; when animation finishes
