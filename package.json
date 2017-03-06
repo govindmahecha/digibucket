@@ -34,7 +34,7 @@
     "live-server": "^0.9.1"
   },
   "scripts": {
-    "prestart": "npm update",
-    "start" : "node ./node_modules/live-server/live-server.js . --open=app"
+    "prestart": "npm update"
+    
   }
 }
