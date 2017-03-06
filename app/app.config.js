@@ -17,5 +17,5 @@
                 templateUrl : 'admin/admin.template.html',
                 controller : 'adminController'
             })
-               .otherwise('/') 
+               
         }])
